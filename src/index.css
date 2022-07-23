@@ -42,7 +42,7 @@ header {
 }
 
 .card.reverse {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   color: #DFDCE3;
 }
 
@@ -155,12 +155,14 @@ input:focus {
   cursor: pointer;
 }
 
-.btn-primary {
-  background-color: #202142;
+.btn-primary, .btn-secondary {
+  background-color: #71DFBE;
+  color: #2B2D2F;
+  font-weight: bold;
 }
 
 .btn-secondary {
-  background: #FF3B3F;
+  background: #229573;
 }
 
 .btn:hover {
