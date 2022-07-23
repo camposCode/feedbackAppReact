@@ -8,8 +8,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #202142;
-  color: #fff;
+  background-color: #4ABDAC;
+  color: #DFDCE3;
   line-height: 1.6;
 }
 
@@ -33,7 +33,7 @@ header {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #DFDCE3;
   color: #333;
   border-radius: 15px;
   padding: 40px 50px;
@@ -43,7 +43,7 @@ header {
 
 .card.reverse {
   background-color: rgba(0, 0, 0, 0.4);
-  color: #fff;
+  color: #DFDCE3;
 }
 
 .card h2 {
@@ -62,7 +62,7 @@ header {
 .rating li,
 .num-display {
   position: relative;
-  background: #f4f4f4;
+  background: #DFDCE3;
   width: 50px;
   height: 50px;
   padding: 10px;
@@ -87,7 +87,7 @@ header {
 
 .rating li:hover,
 .num-display {
-  background: #ff6a95;
+  background: #FF3B3F;
   color: #fff;
 }
 
@@ -96,8 +96,8 @@ header {
 }
 
 [type='radio']:checked ~ label {
-  background: #ff6a95;
-  color: #fff;
+  background: #FF3B3F;
+  color: #DFDCE3;
 }
 
 .input-group {
@@ -119,7 +119,7 @@ input:focus {
 }
 
 .feedback-stats {
-  color: #fff;
+  color: #DFDCE3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -160,7 +160,7 @@ input:focus {
 }
 
 .btn-secondary {
-  background: #ff6a95;
+  background: #FF3B3F;
 }
 
 .btn:hover {
@@ -195,12 +195,12 @@ input:focus {
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
  * document */
 .about-link a {
-  color: #fff;
+  color: #DFDCE3;
   cursor: pointer;
 }
 
 .about-link a:hover {
-  color: #ff6a95;
+  color: #FF3B3F;
 }
 
 .about h1 {
