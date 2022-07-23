@@ -1,5 +1,6 @@
 import React from 'react'
 import FeedbackItem from './FeedbackItem'
+import PropTypes from 'prop-types'
 
 
 const FeedbackList = ({ feedback }) => {
@@ -15,6 +16,10 @@ const FeedbackList = ({ feedback }) => {
         }
     </div>
   )
+}
+
+FeedbackList.prototypes = {
+    feedback: PropTypes.array
 }
 
 export default FeedbackList
