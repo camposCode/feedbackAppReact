@@ -5,9 +5,11 @@ import FeedbackStats from "./components/FeedbackStats";
 import Header from "./components/Header";
 import FeedbackData from "./data/FeedbackData";
 import AboutPage from "./pages/AboutPage";
-import {v4 as uuidv4} from 'uuid'
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { FeedbackProvider } from "./context/FeedbackContext";
+import { v4 as uuidv4 } from 'uuid'
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import AboutIconLink from "./components/AboutIconLink";
+
 
 
 function App() {
@@ -28,34 +30,37 @@ function App() {
   }
 
   return (
-    <Router>
-      <Header/>
-      <div className="container">
-        <Routes>
-          <Route 
-            path="/" 
-            exact
-            element={
-              <>
-                <FeedbackForm 
-                  handleAdd={addFeedback}/>
-                <FeedbackStats 
-                  feedback={feedback}/>
-                <FeedbackList 
-                  feedback={feedback}
-                  handleDelete={deleteFeedback}/>
-              </>
-            }>
-                    
-          </Route>
-          <Route 
-              path="/about"
-              element={ <AboutPage />}/>
-        </Routes>
-        <AboutIconLink />
-      </div>
-    </Router>
-  );
+    <FeedbackProvider>
+        <Router>
+        <Header/>
+        <div className="container">
+          <Routes>
+            <Route 
+              path="/" 
+              exact
+              element={
+                <>
+                  <FeedbackForm 
+                    handleAdd={addFeedback}/>
+                  <FeedbackStats 
+                    feedback={feedback}/>
+                  <FeedbackList 
+                    feedback={feedback}
+                    handleDelete={deleteFeedback}/>
+                </>
+              }>
+                      
+            </Route>
+            <Route 
+                path="/about"
+                element={ <AboutPage />}/>
+          </Routes>
+          <AboutIconLink />
+        </div>
+      </Router>
+    </FeedbackProvider>
+      
+  )
 }
 
 export default App;
