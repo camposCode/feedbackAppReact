@@ -31,7 +31,7 @@ function App() {
 
   return (
     <FeedbackProvider>
-        <Router>
+      <Router>
         <Header/>
         <div className="container">
           <Routes>
@@ -59,7 +59,6 @@ function App() {
         </div>
       </Router>
     </FeedbackProvider>
-      
   )
 }
 
