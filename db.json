@@ -6,12 +6,12 @@
       "id": 1
     },
     {
-      "rating": "9",
+      "rating": 9,
       "text": "Item from json server 2",
       "id": 2
     },
     {
-      "rating": "10",
+      "rating": 10,
       "text": "Item from json server 3",
       "id": 3
     }
