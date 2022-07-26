@@ -11,8 +11,8 @@
       "id": 2
     },
     {
-      "rating": 10,
       "text": "Item from json server 3",
+      "rating": 10,
       "id": 3
     }
   ]
