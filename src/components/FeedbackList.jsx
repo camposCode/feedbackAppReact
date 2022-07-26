@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import FeedbackItem from './FeedbackItem'
 import {motion, animatePresence, AnimatePresence} from "framer-motion"
-import FeedbackContext from '../context/FeedbackContext'
 import Spinner from './shared/Spinner'
+import FeedbackContext from './context/FeedbackContext'
 
 const FeedbackList = () => {
     const { feedback, isLoading } = useContext(FeedbackContext)

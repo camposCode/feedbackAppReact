@@ -19,14 +19,16 @@ export const FeedbackProvider = ({ children }) => {
 
     // Fetch Feedback
     const fetchFeedback = async () =>{
-        const response = await fetch(`http://localhost:8000/feedback?_sort=id&_order=desc`)
+        const response = await fetch(`/feedback?_sort=id&_order=desc`)
         const data = await response.json()
 
         setFeedback(data)
         setIsLoading(false)
     }
     // Add feedback
-    const addFeedback = (newFeedback) => {
+    const addFeedback = async (newFeedback) => {
+        const response = await fetch('/feedback')
+        
         newFeedback.id = uuidv4
         setFeedback([
             newFeedback,
